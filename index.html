@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast Weather App</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background-blur blur1"></div>
+    <div class="background-blur blur2"></div>
+
+    <div class="app-container">
+
+        <div class="weather-card">
+
+            <div class="top-section">
+
+                <div>
+                    <h1>SkyCast</h1>
+                    <p>Real-Time Weather Forecast</p>
+                </div>
+
+                <div class="weather-icon-big">
+                    ☀️
+                </div>
+
+            </div>
+
+
+            <div class="search-box">
+                <input type="text" id="cityInput" placeholder="Search city...">
+                <button id="searchBtn">Search</button>
+            </div>
+
+
+            <div class="loading" id="loading">
+                Fetching weather data...
+            </div>
+
+
+            <div class="error-message" id="errorMessage">
+                City not found.
+            </div>
+
+
+            <div class="weather-info" id="weatherInfo">
+
+                <h2 id="cityName">New Delhi</h2>
+
+                <div class="temperature-section">
+                    <img id="weatherIcon" src="" alt="weather icon">
+                    <h1 id="temperature">28°C</h1>
+                </div>
+
+                <p class="condition" id="condition">Clear Sky</p>
+
+
+                <div class="details-grid">
+
+                    <div class="detail-card">
+                        <span>💧</span>
+                        <h3 id="humidity">65%</h3>
+                        <p>Humidity</p>
+                    </div>
+
+                    <div class="detail-card">
+                        <span>🌬️</span>
+                        <h3 id="wind">10 km/h</h3>
+                        <p>Wind Speed</p>
+                    </div>
+
+                    <div class="detail-card">
+                        <span>🌡️</span>
+                        <h3 id="feelsLike">30°C</h3>
+                        <p>Feels Like</p>
+                    </div>
+
+                    <div class="detail-card">
+                        <span>☁️</span>
+                        <h3 id="clouds">20%</h3>
+                        <p>Cloudiness</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
